@@ -1,0 +1,117 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color:#3b4b28;
+}
+
+#titlepage {
+    text-align: center;
+    min-height: 90vh;
+    padding-top: 120px;
+}
+
+.title {
+    text-align: left;
+    font-size: 80px;
+    color: #c9c9bf;
+    margin-bottom: 50px;
+    margin-left: 200px;
+    padding-right: 100px;
+    margin-right: 100px;
+}
+
+.button {
+  background-color: #c2b24c; 
+  color: white;
+  padding: 30px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+  border-radius: 60px;
+}
+
+.button:hover {
+  background-color: #45a049; 
+}
+
+#menu {
+    max-width: 1200px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    font-size: 50px;
+}
+
+
+
+a:link {
+    margin-top: 0px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+a:visited {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+/*---------------------------------------------*/
+
+.category-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px 20px;
+    max-width: 1400px;
+    margin: auto;
+    justify-items: center;
+}
+
+.category-btn {
+    position: relative;
+    width: 100%;
+    max-width: 450px;
+    height: 250px;
+    border: none;
+    border-radius: 24px;
+    cursor: pointer;
+    background: none;
+    overflow: hidden;
+}
+
+.category-btn img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    filter: brightness(0.9);
+    transition: 0.3s;
+}
+
+.hover-text {
+    position: absolute;
+    top: 75%;
+    right: 50%;
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: bold;
+    opacity: 0;
+    transition: 0.2s;
+}
+
+.category-btn:hover .hover-text {
+    opacity: 1;
+    font-size: 25px;
+}
+
+.category-btn:hover img {
+    filter: brightness(0.4);
+}
