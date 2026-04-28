@@ -1,0 +1,49 @@
+body {
+    margin: 20px 20px;
+    font-size: 18px;
+}
+
+        .sampDiv{
+            text-align: center;
+            background-color: rgb(174, 209, 174);
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+
+        h1{
+            color: blue;
+            font-size: 32px;
+        }
+
+        h2 {
+            font-size: 28px;
+        }
+
+        h3 {
+            font-size: 24px;
+        }
+
+        h4 {
+            font-size: 22px;
+        }
+
+        p{
+            text-align: center;
+            color: red;
+            font-size: 18px;
+        }
+
+        #para1{
+            text-align: right;
+            color: rgb(0, 0, 255);
+        }
+
+        .center{
+            text-align: right;
+            color: green;
+        }
+
+        h3,h4,p {
+            text-align: center;
+            color: blueviolet;
+        }
