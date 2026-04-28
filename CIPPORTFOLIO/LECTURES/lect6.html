@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture 6</title>
+    <style>
+
+        .container {
+            border: 1px solid black;
+            padding: 20px;
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        table, td {
+            font-size: 20px;
+            border: solid 1px;
+            border-collapse: collapse;
+            padding: 10px 50px 10px 10px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 40px;
+        }
+
+        select, input {
+            font-size: 20px;
+        }
+
+        select {
+            padding: 5px 100px;
+        }
+
+        video {
+            width: 300px;
+            height: 200px;
+        }
+
+        audio {
+            display: block;
+            margin: 10px auto;
+        }
+
+        .multimedia-table, .multimedia-table td {
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>FORMS</h1>
+
+        <form>
+            <table style="margin: 0 auto;">
+                <tr>
+                    <td colspan="3">Full Name:</td>
+                    <td><input type="text" size="30" placeholder="Enter your full name"></td>
+                </tr>   
+
+                <tr>
+                    <td colspan="3">Student ID:</td>
+                    <td>
+                        <input type="text" size="30" placeholder="Enter your student ID">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="3">Gender:</td>
+                    <td><input type="radio" id="male" value="male" name="gender"><label for="male">Male</label>
+                    
+                    <input type="radio" id="female" value="female" name="gender"><label for="female">Female</label></td>
+                </tr>
+
+                <tr>
+                    <td colspan="3">Hobbies:</td>
+                    <td>
+                        <input type="checkbox" value="sports" name="hobbies" id="sports"><label for="sports">Sports</label>
+
+                        <input type="checkbox" value="music" name="hobbies" id="music"><label for="music">Music</label>
+
+                        <input type="checkbox" value="arts" name="hobbies" id="arts"><label for="arts">Arts</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="3">
+                        Campus: 
+                    </td>
+                    <td>
+                        <select>
+                            <option disabled selected>Select</option>
+                            <option>UE Caloocan</option>
+                            <option>UE Manila</option>
+                            <option>UE Laguna</option>
+                            <option>UERMMMC</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="4" style="text-align: center;">
+                        <input type="submit">
+                        <input type="reset">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+    <br><br>
+
+    <div class="container" >
+            <h1>MULTIMEDIA</h1>
+
+        <table class="multimedia-table" style="border: none;">
+            <tr>
+                <td align="center">
+                    <img src="https://i.scdn.co/image/ab67616d0000b273c027ad28821777b00dcaa888" class="album" width="150" alt="All The Stars album cover">
+                    <p>All The Stars</p>
+                    <p class="artist">Kendrick Lamar, SZA</p>
+                    <audio src="songs/Kendrick Lamar, SZA - All The Stars.mp3" controls></audio>
+                </td>
+
+                <td align="center">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/3/3a/People_by_Libianca.png" class="album" width="150" alt="People album cover">
+                    <p>People</p>
+                    <p class="artist">Libianca</p>
+                    <audio src="songs/Libianca - People (Official Visualiser) ft. Ayra Starr, Omah Lay.mp3" controls></audio>
+                </td>
+            </tr>
+
+            <tr>
+                <td align="center">
+                    <img src="https://i.scdn.co/image/ab67616d0000b2739041b9965925059507fb44af" class="album" width="150" alt="The Days NOTION Remix album cover">
+                    <p>The Days NOTION Remix</p>
+                    <p class="artist">CHRYSTAL</p>
+                    <audio src="songs/CHRYSTAL - THE DAYS  (NOTION REMIX).mp3" controls></audio>
+                </td>
+
+                <td align="center">
+                    <img src="https://i.scdn.co/image/ab67616d0000b27309d6ed214f03fbb663e46531" class="album" width="150" alt="Luther album cover">
+                    <p>Luther</p>
+                    <p class="artist">Kendrick Lamar, SZA</p>
+                    <audio src="songs/Kendrick Lamar - luther (Official Audio).mp3" controls></audio>
+                </td>
+            </tr>
+
+            <tr>
+                <td align="center" colspan="2">
+                    <img src="https://images.genius.com/04159db08b6ef156e3418efa558af170.1000x1000x1.png" class="album" width="150" alt="Risk It All album cover">
+                    <p>Risk It All</p>
+                    <p class="artist">Bruno Mars</p>
+                    <audio src="songs/Bruno Mars - Risk It All.mp3" controls></audio>
+                </td>
+            </tr>
+        </table>
+
+    <table class="multimedia-table">
+            <tr>
+                <td align="center">
+                    <p>Do Do Sol Sol La La Sol</p>
+                    <video src="vids/Do Do Sol Sol La La Sol  Official Trailer  Netflix [ENG SUB].mp4" controls></video>
+                </td>
+
+                <td align="center">
+                    <p>The Amazing Digital Circus</p>
+                    <video src="vids/THE AMAZING DIGITAL CIRCUS [OFFICIAL TRAILER].mp4" controls></video>
+                </td>
+            </tr>
+
+            <tr>
+                <td align="center">
+                    <p>Boyfriend on Demand</p>
+                    <video src="vids/Boyfriend on Demand  Official Trailer  Netflix.mp4" controls></video>
+                </td>
+
+                <td align="center">
+                    <p>The Apothecary Diaries</p>
+                    <video src="vids/The Apothecary Diaries  Official Trailer.mp4" controls></video>
+                </td>
+            </tr>
+
+            <tr>
+                <td align="center" colspan="2">
+                    <p>The Office</p>
+                    <video src="vids/The Office US Season 1 Trailer (2005).mp4" controls></video>
+                </td>
+            </tr>
+        </table>
+    </div>
+    
+</body>
+</html>
