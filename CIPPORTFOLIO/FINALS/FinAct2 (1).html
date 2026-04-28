@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Data Sheet</title>
+
+    <style>
+    body {
+        font-family: "Times New Roman", serif;
+        background: #fff;
+    }
+
+    .container {
+        width: 900px;
+        margin: 20px auto;
+    }
+
+    /* HEADER */
+    .header {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .logo {
+        width: 110px;
+        height: 110px;
+        border: 2px solid black;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+    }
+
+    .title {
+        text-align: center;
+        flex: 1;
+    }
+
+    .title h1 {
+        margin: 0;
+        font-size: 18px;
+        letter-spacing: 1px;
+    }
+
+    .title h2 {
+        margin: 2px 0;
+        font-size: 14px;
+        font-weight: 100;
+    }
+
+    .title h3 {
+        margin: 5px 0;
+        font-size: 25px;
+        letter-spacing: 1px;
+    }
+
+    .subtitle {
+        font-size: 12px;
+        font-style: italic;
+    }
+
+    .right {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
+    .line {
+        border: none;
+        border-bottom: 1px solid black;
+        outline: none;
+    }
+
+    .sm {width: 80px;}
+    .md {width: 150px;}
+    .lg {width: 250px;}
+    .ml {width: 780px;}
+    .xl {width: 100%;}
+
+
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 10px;
+    }
+
+    td {
+        padding: 4px;
+        vertical-align: top;
+    }
+
+    .label {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .section {
+        margin-top: 15px;
+        font-weight: bold;
+    }
+
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- HEADER -->
+    <div class="header">
+        <div class="logo">LOGO</div>
+
+        <div class="title">
+            <h1><b>SAMPLE UNIVERSITY</b></h1>
+            <h2>ENROLLMENT SYSTEM</h2><br>
+            <h3>PERSONAL DATA SHEET</h3>
+            <div class="subtitle">(Graduate School, Law, Medicine)</div>
+        </div>
+
+        <div class="right">
+            Program: <input class="line md"><br><br><br><br>
+            Student #: <input class="line md">
+        </div>
+    </div>
+
+    <!-- NAME ROW -->
+    <table>
+        <tr>
+            <td><input class="line xl"></td>
+            <td><input class="line xl"></td>
+            <td><input class="line xl"></td>
+            <td><input class="line xl"></td>
+        </tr>
+        <tr class="label">
+            <td>SURNAME</td>
+            <td>GIVEN NAME</td>
+            <td>MIDDLE NAME</td>
+            <td>AUXILIARY NAME<br>(Sr, Jr, II, III, etc.)</td>
+        </tr>
+    </table>
+
+    <!-- STUDENT DETAILS -->
+    <div class="section">STUDENT DETAILS:</div>
+
+    <table>
+        <tr>
+            <td colspan="6">City Address: <span><input class="line ml"></span></td>
+        </tr>
+
+        <tr>
+            <td colspan="2">Zip Code:<input class="line sm"></td>
+
+            <td colspan="2">Tel. No.<input class="line md"></td>
+
+            <td colspan="2">E-mail address:<input class="line lg"></td>
+        </tr>
+
+        <tr>
+            <td colspan="6">Home Address: <input class="line ml"></td>
+        </tr>
+
+        <tr>
+            <td>Zip Code:</td>
+            <td colspan="3"><input class="line sm"></td>
+
+            <td>Region:</td>
+            <td><input class="line md"></td>
+        </tr>
+
+        <tr>
+            <td>Birthday:</td>
+            <td colspan="3"><input class="line md"></td>
+
+            <td>Age:</td>
+            <td><input class="line sm"></td>
+        </tr>
+
+        <tr>
+            <td>Birthplace:</td>
+            <td colspan="3"><input class="line md"></td>
+
+            <td>Religion:</td>
+            <td><input class="line md"></td>
+        </tr>
+
+        <tr>
+            <td>Citizenship:</td>
+            <td colspan="3"><input class="line md"></td>
+
+            <td>Sex:</td>
+            <td><input class="line sm"></td>
+        </tr>
+
+        <tr>
+            <td>If Alien, ACR # (see Registrar):</td>
+            <td colspan="5"><input class="line lg"></td>
+        </tr>
+    </table>
+
+    <!-- STATUS -->
+    <table>
+        <tr>
+            <td width= "15%">
+                <strong>Legal Status:</strong>
+            </td>
+            <td width="30%" colspan="3">
+                <input type="checkbox"> Citizen of RP<br>
+                <input type="checkbox"> Permanent Resident<br>
+                <input type="checkbox"> Person granted permission to enter and remain as a student in RP on a visa for a defined period of time<br>
+                <input type="checkbox"> Person granted permission to enter and remain as a child or spouse of a worker on a visa for a defined period of time<br>
+                <input type="checkbox"> Other visa<br>
+                <input type="checkbox"> Legal status not known
+            </td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+
+            <td width="15%">
+                <strong>Civil Status:</strong><br><br><br><br><br><br><br>
+                <input type="checkbox"> Working <br>
+                If working: Office/Bus. Tel. #:
+                <input class="line md">
+            </td>
+            <td>
+                <input type="checkbox"> Single<br>
+                <input type="checkbox"> Married<br>
+                <input type="checkbox"> Divorced<br>
+                <input type="checkbox"> Widowed<br>
+                <input type="checkbox"> Separated<br><br>
+
+                <input type="checkbox"> Not working<br><br>
+
+                
+            </td>
+        </tr>
+    </table>
+
+    <!-- PARENTS -->
+    <table>
+        <tr>
+            <tr>
+                <td colspan="3"><b>FATHER'S INFORMATION:</b></td>
+                <td colspan="3"><b>MOTHER'S INFORMATION:</b></td>
+            </tr>
+
+            <tr>
+                <td>Surname:</td>
+                <td colspan="2"><input class="line lg"></td>
+
+                <td>Surname:</td>
+                <td colspan="2"><input class="line lg"></td>
+            </tr>
+
+            <tr>
+                <td>First Name:</td>
+                <td colspan="2"><input class="line lg"></td>
+
+                <td>First Name:</td>
+                <td colspan="2"><input class="line lg"></td>
+            </tr>
+
+            <tr>
+                <td>Middle Name:</td>
+                <td colspan="2"><input class="line lg"></td>
+
+                <td>Middle Name:</td>
+                <td colspan="2"><input class="line lg"></td>
+            </tr>
+
+            <tr>
+                <td>Auxiliary Name:</td>
+                <td colspan="2"><input class="line lg"></td>
+
+                <td>Auxiliary Name:</td>
+                <td colspan="2"><input class="line lg"></td>
+            </tr>
+
+            <tr>
+                <td>Occupation/Employment:</td>
+                <td colspan="2"><input class="line lg"></td>
+
+                <td>Occupation/Employment:</td>
+                <td colspan="2"><input class="line lg"></td>
+            </tr>
+
+            <tr>
+                <td>Educational Attainment:</td>
+                <td colspan="2"><input class="line lg"></td>
+
+                <td>Educational Attainment:</td>
+                <td colspan="2"><input class="line lg"></td>
+            </tr>
+
+            <tr>
+                <td colspan="5"><br>
+                    Parent’s Address: <input class="line ml"><br><br>
+                     
+                     
+                </td>
+            </tr>
+
+            <tr>
+                <td>Zip Code:</td>
+                <td colspan="2"><input class="line sm"></td>
+
+                <td>Parent’s Tel. #:</td>
+                <td colspan="2"><input class="line lg"></td>
+            </tr>
+    </table>
+
+    <br>
+    <table>
+            <tr>
+                <td colspan="3">
+                    <b>GUARDIAN'S INFORMATION:</b> (If Applicable)
+                </td>
+                <td colspan="3"></td>
+            </tr>
+
+            <tr>
+                <td>Surname:</td>
+                <td colspan="2"><input class="line lg"></td>
+
+                <td>Guardian’s Address:</td>
+                <td colspan="2"><input class="line lg"></td>
+            </tr>
+
+            <tr>
+                <td>First Name:</td>
+                <td colspan="2"><input class="line lg"></td>
+
+                <td>Zip Code:</td>
+                <td colspan="2"><input class="line md"></td>
+            </tr>
+
+            <tr>
+                <td>Middle Name:</td>
+                <td colspan="2"><input class="line lg"></td>
+
+                <td>Tel. #:</td>
+                <td colspan="2"><input class="line lg"></td>
+            </tr>
+
+            <tr>
+                <td>Auxiliary Name:</td>
+                <td colspan="2"><input class="line lg"></td>
+
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>Occupation/Employment:</td>
+                <td colspan="2"><input class="line lg"></td>
+
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>Off./Bus. Tel. #:</td>
+                <td colspan="2"><input class="line lg"></td>
+
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+
+    </div>
+
+</body>
+</html>
