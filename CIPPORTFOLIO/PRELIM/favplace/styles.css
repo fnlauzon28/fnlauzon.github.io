@@ -1,0 +1,95 @@
+    html {
+        margin: 0;
+        background-image: url(smmasi.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        color: white;
+    }
+   
+    .contentborder {
+        border-style: solid;
+        border-radius: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        border-color: rgba(0,0,0,0);
+        background-color: rgba(32, 57, 89, 0.75);
+        width: 80%
+    }
+
+
+    h1 {
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 95px;
+    }
+
+
+    h2 {
+        text-align: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 55px;
+        margin-bottom: 40px;
+    }
+
+    p {
+        text-align: justify;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 25px;
+        line-height: 2.0;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+
+    .border {
+        border-style: double;
+        border-radius: 50px;
+    }
+
+
+    a {
+        color: white;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 20px;
+    }
+
+    img {
+        border-radius: 20%;
+    }
+
+    #smmasicrop {
+        float: right; 
+        margin-right: 25px; 
+        margin-top: 80px; 
+        width: 550px; 
+        border-radius: 100%;
+    }
+
+    #outside {
+        float: right; 
+        margin-top: 20px;
+        margin-left: 40px; 
+        margin-right: 25px; 
+        margin-bottom: 15px;
+        width: 630px;
+    }
+
+    #inside {
+        float: left; 
+        margin-top: 60px;
+        margin-left: 35px; 
+        margin-right: 55px;
+        margin-bottom: 20px; 
+        width: 650px;
+    }
+
+
+
+
+
+
+
+
+
+
