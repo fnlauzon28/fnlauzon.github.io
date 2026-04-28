@@ -1,0 +1,7 @@
+functional buttons
+
+Shop button
+Home Decor button
+Wall Clock button
+Add to Cart button
+Go Back button (all pages)
